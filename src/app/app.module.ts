@@ -8,6 +8,7 @@ import { PopupComponent } from './popup/popup.component';
 import { LoginComponent } from './login/login.component';
 import { PhoneComponent } from './phone/phone.component';
 import { CodeComponent } from './code/code.component';
+import { Auth0Service } from './shared/services/auth0.service';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { CodeComponent } from './code/code.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [Auth0Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
